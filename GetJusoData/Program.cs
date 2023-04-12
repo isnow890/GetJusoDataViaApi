@@ -14,7 +14,7 @@ class Program
     private const string API_URL = "https://business.juso.go.kr/addrlink/addrLinkApi.do";
     private static string? keyword;
     private int currentPage = 1;
-    private int countPerPage;
+    private int countPerPage=0;
 
     //private AddressResults addressResults = default!;
 
