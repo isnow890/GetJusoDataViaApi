@@ -48,11 +48,6 @@ class Program
 
             resultList = JsonSerializer.Deserialize<DTO>(result.ToString());
 
-            Console.WriteLine($"결과");
-            Console.WriteLine($"총 {resultList.Common.토탈카운트}건");
-            Console.WriteLine($"에러메시지 : {resultList.Common.에러메시지}");
-            Console.WriteLine($"에러코드 : {resultList.Common.에러코드}");
-            Console.WriteLine($"======================================");
 
 
             var seq = 0;
@@ -65,7 +60,20 @@ class Program
                 Console.WriteLine($"건물명 : {cc.건물명}");
                 Console.WriteLine($"영문도로명주소 : {cc.영문도로명주소}");
             }
-            
+
+            Console.WriteLine(string.Empty);
+            Console.WriteLine(string.Empty);
+            Console.WriteLine(string.Empty);
+
+            Console.WriteLine($"======================================");
+            Console.WriteLine($"결과");
+            Console.WriteLine($"총 {resultList.Common.토탈카운트}건");
+            Console.WriteLine($"에러메시지 : {resultList.Common.에러메시지}");
+            Console.WriteLine($"에러코드 : {resultList.Common.에러코드}");
+            Console.WriteLine($"======================================");
+
+
+
         }
 
 
